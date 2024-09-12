@@ -23,7 +23,7 @@ class _gridprepState extends State<gridprep> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('GridView'),
+        title: const Text('GridView'),
       ),
       body: Column(
         children: [
@@ -64,7 +64,7 @@ class _gridprepState extends State<gridprep> {
          
 
           
-          Container(
+          SizedBox(
             height: 100,
             child: GridView.extent(maxCrossAxisExtent: 30,
             // mainAxisSpacing: 11,

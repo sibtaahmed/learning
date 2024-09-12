@@ -37,24 +37,24 @@ class _MyWidgetState extends State<MyWidget> {
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text(arrnames[index] ,style: TextStyle(fontSize: 21, fontWeight: FontWeight.w400),),
+                child: Text(arrnames[index] ,style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w400),),
               ),
               Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(arrnames[index] ,style: TextStyle(fontSize: 11, fontWeight: FontWeight.w400),),
+            child: Text(arrnames[index] ,style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w400),),
           ),
             ],
           ),
           
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(arrnames[index] ,style: TextStyle(fontSize: 21, fontWeight: FontWeight.w400),),
+            child: Text(arrnames[index] ,style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w400),),
           )
          ],);
         },
         itemCount: arrnames.length,
         separatorBuilder:(context, index){
-          return Divider(height: 100, thickness:4,);
+          return const Divider(height: 100, thickness:4,);
         },
       )));
         

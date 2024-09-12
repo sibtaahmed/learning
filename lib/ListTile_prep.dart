@@ -67,10 +67,10 @@ class _TileprepState extends State<Tileprep> {
               : Text(
                   'Whatsapp',
                   style: GoogleFonts.permanentMarker(
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                           color: Colors.white, fontWeight: FontWeight.w400)),
                 ),
-          backgroundColor: Color.fromARGB(221, 41, 129, 189),
+          backgroundColor: const Color.fromARGB(221, 41, 129, 189),
           actions: [
             !_searchBar ? Row(
               children: [
@@ -86,26 +86,26 @@ class _TileprepState extends State<Tileprep> {
             ),
             IconButton(
               onPressed: toggleSearchBar,
-              icon: Icon(
+              icon: const Icon(
                 Icons.search_rounded,
                 color: Colors.white,
               ),
             ),
             IconButton(
-              icon: Icon(
+              icon: const Icon(
                 Icons.arrow_right,
                 color: Colors.white70,
                 size: 40,
               ), // Three dots icon
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => prep(),));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const prep(),));
                 // Action when icon is pressed
               },
             )
               ],
             ) : IconButton(
               onPressed: toggleSearchBar,
-              icon: Icon(
+              icon: const Icon(
                 Icons.close,
                 color: Colors.white,
               ),
@@ -116,7 +116,7 @@ class _TileprepState extends State<Tileprep> {
             itemBuilder: (context, index) {
               return Column(children: [
                 Container(
-                  padding: EdgeInsets.symmetric(vertical: 15),
+                  padding: const EdgeInsets.symmetric(vertical: 15),
                   color: const Color.fromARGB(255, 1, 2, 1),
                   child: ListTile(
                     leading: CircleAvatar(
@@ -125,7 +125,7 @@ class _TileprepState extends State<Tileprep> {
                     ),
                     title: Text(arrNames[index],
                         style: GoogleFonts.permanentMarker(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                                 fontFamily: 'mainfont',
                                 fontWeight: FontWeight.w600,
                                 color: Colors.yellowAccent))),
@@ -133,7 +133,7 @@ class _TileprepState extends State<Tileprep> {
                       arrSubtitle[index],
                       style: GoogleFonts.robotoMono(color: Colors.white70),
                     ),
-                    trailing: Icon(
+                    trailing: const Icon(
                       Icons.message,
                       color: Colors.white,
                     ),

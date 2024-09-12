@@ -13,13 +13,13 @@ class _Inserting_buttonState extends State<Inserting_button> {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      appBar: AppBar(title: Text('Inserting button'),
+      appBar: AppBar(title: const Text('Inserting button'),
       centerTitle: true,
-      backgroundColor: Color.fromARGB(255, 56, 73, 196),),
+      backgroundColor: const Color.fromARGB(255, 56, 73, 196),),
       body: Center(
         child: ElevatedButton(onPressed: (){
         
-        }, child: Text('Explore more') ),
+        }, child: const Text('Explore more') ),
       )
     );
   }

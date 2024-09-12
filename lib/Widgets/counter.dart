@@ -13,19 +13,19 @@ class _counterprepState extends State<counterprep> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Stateful',),
+        title: const Text('Stateful',),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('count: $count',style: TextStyle(fontSize: 25) ),
+            Text('count: $count',style: const TextStyle(fontSize: 25) ),
             ElevatedButton(onPressed: (){
               count++;
               setState(() {
                 
               });
-            }, child: Text('COUNT'))
+            }, child: const Text('COUNT'))
           ],
         ),
       ),

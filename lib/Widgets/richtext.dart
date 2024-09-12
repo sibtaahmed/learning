@@ -19,13 +19,13 @@ class _RichtextprepState extends State<Richtextprep> {
             style: GoogleFonts.bungee(
                 color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
           ),
-          backgroundColor: Color.fromARGB(255, 71, 146, 231),
+          backgroundColor: const Color.fromARGB(255, 71, 146, 231),
           actions: [
             IconButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Mypreps(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Mypreps(),));
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_right,
                   color: Colors.white70,
                 size: 40,
@@ -42,7 +42,7 @@ class _RichtextprepState extends State<Richtextprep> {
                         style: GoogleFonts.poppins(
                             color: Colors.black, fontSize: 70),
                         children: [
-                      TextSpan(text: ('Myself ')),
+                      const TextSpan(text: ('Myself ')),
                       TextSpan(
                           text: 'Ahmad ',
                           style: GoogleFonts.permanentMarker(
@@ -57,20 +57,20 @@ class _RichtextprepState extends State<Richtextprep> {
                             fontSize: 65,
                             fontWeight: FontWeight.bold,
                           )),
-                      TextSpan(text: 'And Today We '),
-                      TextSpan(
+                      const TextSpan(text: 'And Today We '),
+                      const TextSpan(
                           text: 'Are ',
                           style: TextStyle(
                               fontWeight: FontWeight.bold, color: Colors.red)),
-                      TextSpan(text: ('Practicing ')),
-                      TextSpan(
+                      const TextSpan(text: ('Practicing ')),
+                      const TextSpan(
                           text: 'Flutters Dev ',
                           style: TextStyle(
                               color: Colors.purple,
                               fontSize: 60,
                               fontWeight: FontWeight.w500,
                               fontStyle: FontStyle.italic)),
-                      TextSpan(
+                      const TextSpan(
                           text: '!',
                           style: TextStyle(
                               fontWeight: FontWeight.bold, color: Colors.red))

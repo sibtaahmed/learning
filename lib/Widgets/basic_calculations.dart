@@ -19,12 +19,12 @@ class _calculatorState extends State<calculator> {
     return Scaffold(
       //  extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text('Basic Calculations', style: TextStyle(fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold),),
-        backgroundColor: Color.fromARGB(255, 61, 118, 204),
+        title: const Text('Basic Calculations', style: TextStyle(fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold),),
+        backgroundColor: const Color.fromARGB(255, 61, 118, 204),
       ),
       body: SafeArea(
         child: Container(
-          color: Color.fromARGB(255, 58, 65, 64),
+          color: const Color.fromARGB(255, 58, 65, 64),
           child: Center(
             child: Padding(
               padding: const EdgeInsets.all(21.0),
@@ -33,12 +33,12 @@ class _calculatorState extends State<calculator> {
                   TextField(
                     keyboardType: TextInputType.number,
                     controller: nbr1controller,
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                   ),
                   TextField(
                     keyboardType: TextInputType.number,
                     controller: nbr2controller,
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
 
                   ),
                    Padding(
@@ -54,7 +54,7 @@ class _calculatorState extends State<calculator> {
                                    setState(() {
                                      
                                    });
-                        }, child: Text('add')),
+                        }, child: const Text('add')),
                         ElevatedButton(onPressed: (){
                            var nbr1 = int.parse(nbr1controller.text.toString());
                           var nbr2 = int.parse(nbr2controller.text.toString());
@@ -63,7 +63,7 @@ class _calculatorState extends State<calculator> {
                                    setState(() {
                                      
                                    });
-                        }, child: Text('sub')),
+                        }, child: const Text('sub')),
                         ElevatedButton(onPressed: (){
                             var nbr1 = int.parse(nbr1controller.text.toString());
                           var nbr2 = int.parse(nbr2controller.text.toString());
@@ -72,7 +72,7 @@ class _calculatorState extends State<calculator> {
                                    setState(() {
                                      
                                    });
-                        }, child: Text('mul')),
+                        }, child: const Text('mul')),
                         ElevatedButton(onPressed: (){
                             var nbr1 = int.parse(nbr1controller.text.toString());
                           var nbr2 = int.parse(nbr2controller.text.toString());
@@ -81,14 +81,14 @@ class _calculatorState extends State<calculator> {
                                    setState(() {
                                      
                                    });
-                        }, child: Text('div')),
+                        }, child: const Text('div')),
                       ],
                                        ),
                    ),
-                   Padding(padding: EdgeInsets.all(21),child: Text(result, style: TextStyle(fontSize: 21),),),
+                   Padding(padding: const EdgeInsets.all(21),child: Text(result, style: const TextStyle(fontSize: 21),),),
                    ElevatedButton(onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder:(context) => flutterdatepick(choosingDate: widget.choosingDate.toString(),),));
-          }, child: Text('NEXT >>')),
+          }, child: const Text('NEXT >>')),
                 ],
               ),
             ),

@@ -65,7 +65,7 @@ class RoundedButton extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 icon!,
-                SizedBox(width: 4,),
+                const SizedBox(width: 4,),
                 Text(btnName, style: TextStyle(color: textColor)),
             
               ],

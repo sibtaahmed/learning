@@ -40,13 +40,13 @@ class _mybuttonState extends State<mybutton> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
+            SizedBox(
               width: 130,
               height: 60,
               child: RoundedButton(
                 btnName: 'Login',
                 bgColor: Colors.brown,
-                icon: Icon(
+                icon: const Icon(
                   Icons.lock,
                   color: Colors.green,
                 ),
@@ -56,10 +56,10 @@ class _mybuttonState extends State<mybutton> {
                 textColor: Colors.white,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 11,
             ),
-            Container(
+            SizedBox(
               width: 130,
               height: 60,
               child: RoundedButton(

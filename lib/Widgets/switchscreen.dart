@@ -14,15 +14,15 @@ class _inputpageState extends State<inputpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('first page'),
+        title: const Text('first page'),
       ),
       body: Column(
         children: [
-          Text('welcome', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),),
-          SizedBox(height: 20,),
+          const Text('welcome', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),),
+          const SizedBox(height: 20,),
           ElevatedButton(onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder:(context) => wraper(),));
-          }, child: Text('next'))
+            Navigator.push(context, MaterialPageRoute(builder:(context) => const wraper(),));
+          }, child: const Text('next'))
         ],
       ),
     );

@@ -17,8 +17,8 @@ class _Home_pageState extends State<Home_page> {
       backgroundColor: const Color.fromARGB(255, 59, 58, 58),
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Color.fromRGBO(39, 120, 212, 1),
-        titleTextStyle: TextStyle(color: Colors.white),
+        backgroundColor: const Color.fromRGBO(39, 120, 212, 1),
+        titleTextStyle: const TextStyle(color: Colors.white),
         title: const Text('Demo APP', style: TextStyle(fontSize: 25),),
         actions: [
           IconButton(
@@ -26,7 +26,7 @@ class _Home_pageState extends State<Home_page> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Inserting_button(),
+                      builder: (context) => const Inserting_button(),
                     ));
               },
               icon: const Icon(
@@ -36,7 +36,7 @@ class _Home_pageState extends State<Home_page> {
         ],
       ),
       body: Center(
-        child: Container(
+        child: SizedBox(
           width: 330,
           child: Column(
             
@@ -50,12 +50,12 @@ class _Home_pageState extends State<Home_page> {
                     fontWeight: FontWeight.w800,
                     color: Color.fromARGB(255, 244, 241, 236), ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 1,
               ),
               TextField(
                 controller: namecontroller,
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
               
               ),
               Padding(
@@ -68,7 +68,7 @@ class _Home_pageState extends State<Home_page> {
                             builder: (context) => calculator(choosingDate: namecontroller.text,),
                           ));
                     },
-                    child: Text('Explore')),
+                    child: const Text('Explore')),
               ),
             
             ],

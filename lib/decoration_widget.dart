@@ -13,7 +13,7 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Techzaad',),
+        title: const Text('Techzaad',),
       ),
       body: Container(
       width:double.infinity,
@@ -25,7 +25,7 @@ class _DashboardState extends State<Dashboard> {
             height: 100,
             decoration: BoxDecoration(
                color: Colors.brown.shade500,
-              borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomRight: Radius.circular(20)),
+              borderRadius: const BorderRadius.only(topLeft: Radius.circular(20), bottomRight: Radius.circular(20)),
             border: Border.all(width: 2, color: Colors.green.shade400),
              
             ))

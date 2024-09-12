@@ -21,7 +21,7 @@ class _flutterdatepickState extends State<flutterdatepick> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             'Date Picker',
             style: TextStyle(
                 fontSize: 21, fontWeight: FontWeight.w600, color: Colors.white),
@@ -60,7 +60,7 @@ class _flutterdatepickState extends State<flutterdatepick> {
                             'date selected: ${pickeddate.day}-${pickeddate.month}-${pickeddate.year}');
                       }
                     },
-                    child: Text('SHOW DATE')),
+                    child: const Text('SHOW DATE')),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -76,15 +76,15 @@ class _flutterdatepickState extends State<flutterdatepick> {
                     }
                 
                     },
-                    child: Text('SHOW TIME')),
+                    child: const Text('SHOW TIME')),
               ),
               SizedBox(height: 480,
                 child: Align(
                   alignment: Alignment.bottomRight,
                   child: ElevatedButton(
                     onPressed: (){
-                              Navigator.push(context, MaterialPageRoute(builder:(context) => Tileprep(),));
-                            }, child: Text('NEXT >>')),
+                              Navigator.push(context, MaterialPageRoute(builder:(context) => const Tileprep(),));
+                            }, child: const Text('NEXT >>')),
                 ),
               ),
             ],

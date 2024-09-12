@@ -8,7 +8,7 @@ class slidebar extends StatefulWidget {
 }
 
 class _slidebarState extends State<slidebar> {
-  RangeValues values = RangeValues(0, 100);
+  RangeValues values = const RangeValues(0, 100);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class _slidebarState extends State<slidebar> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text(
+        title: const Text(
           "SLIDERBAR",
           style: TextStyle(
               fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),

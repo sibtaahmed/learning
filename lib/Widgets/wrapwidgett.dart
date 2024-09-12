@@ -11,8 +11,8 @@ class _wraperState extends State<wraper> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('MyApp'),),
-      body: Container(
+      appBar: AppBar(title: const Text('MyApp'),),
+      body: SizedBox(
         width: double.infinity,
         child: Wrap(
           direction: Axis.vertical,
@@ -25,7 +25,7 @@ class _wraperState extends State<wraper> {
             color: Colors.deepPurple,),
             Container(width: 70,
             height: 70,
-            color: Color.fromARGB(255, 231, 46, 21),),
+            color: const Color.fromARGB(255, 231, 46, 21),),
             Container(width: 70,
             height: 70,
             color: const Color.fromARGB(255, 58, 183, 58),),
@@ -34,22 +34,22 @@ class _wraperState extends State<wraper> {
             color: const Color.fromARGB(255, 58, 175, 183),),
             Container(width: 70,
             height: 70,
-            color: Color.fromARGB(255, 230, 252, 37),),
+            color: const Color.fromARGB(255, 230, 252, 37),),
             Container(width: 70,
             height: 70,
-            color: Color.fromARGB(255, 58, 57, 59),),
+            color: const Color.fromARGB(255, 58, 57, 59),),
             Container(width: 70,
             height: 70,
-            color: Color.fromARGB(255, 223, 117, 18),),
+            color: const Color.fromARGB(255, 223, 117, 18),),
             Container(width: 70,
             height: 70,
-            color: Color.fromARGB(255, 16, 56, 54),),
+            color: const Color.fromARGB(255, 16, 56, 54),),
             Container(width: 70,
             height: 70,
-            color: Color.fromARGB(255, 8, 2, 90),),
+            color: const Color.fromARGB(255, 8, 2, 90),),
             Container(width: 70,
             height: 70,
-            color: Color.fromARGB(255, 8, 7, 8),),
+            color: const Color.fromARGB(255, 8, 7, 8),),
           ],
         ),
       ),

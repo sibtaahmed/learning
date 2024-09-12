@@ -27,7 +27,7 @@ class _MyprepsState extends State<Mypreps> {
   }
 
   void _updateTime() {
-    _timer = Timer.periodic(Duration(seconds: 1), (Timer timer) {
+    _timer = Timer.periodic(const Duration(seconds: 1), (Timer timer) {
       if (mounted) {
         setState(() {
           _currentTime = DateFormat('yyyy-MM-dd HH:mm:ss').format(DateTime.now());
@@ -40,7 +40,7 @@ class _MyprepsState extends State<Mypreps> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Current Date and Time',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
         ),
@@ -55,8 +55,8 @@ class _MyprepsState extends State<Mypreps> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
+                const Padding(
+                  padding: EdgeInsets.all(20.0),
                   child: Text(
                     'Current Date & Time',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
@@ -64,13 +64,13 @@ class _MyprepsState extends State<Mypreps> {
                 ),
                 Text(
                   _currentTime,
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
                 TextField(
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
-                      borderSide: BorderSide(color: Colors.pink),
+                      borderSide: const BorderSide(color: Colors.pink),
                     ),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
@@ -78,12 +78,12 @@ class _MyprepsState extends State<Mypreps> {
                     ),
                   ),
                 ),
-                SizedBox(height: 15),
+                const SizedBox(height: 15),
                 TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
-                      borderSide: BorderSide(color: const Color.fromARGB(255, 243, 85, 28)),
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 243, 85, 28)),
                     ),
                   ),
                 ),
@@ -96,11 +96,11 @@ class _MyprepsState extends State<Mypreps> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => slidebar(),
+                            builder: (context) => const slidebar(),
                           ),
                         );
                       },
-                      child: Text('NEXT >>'),
+                      child: const Text('NEXT >>'),
                     ),
                   ),
                 ),
